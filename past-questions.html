@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Questions | UENR Agribusiness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .ghana-green { background-color: #006b3f; }
+        .ghana-yellow { background-color: #5ffc16; }
+    </style>
+</head>
+<body>
+    <!-- Header (same as index.html but with active nav item) -->
+    <header class="ghana-green text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="assets/logo.jpg" alt="ABSAG UENR Logo" class="h-12 w-12 rounded-full object-cover border-2 border-white">
+                <div>
+                    <h1 class="text-xl font-bold">UENR Agribusiness Portal</h1>
+                    <p class="text-xs text-white opacity-80">Department of Agribusiness Management & Consumer Studies</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-ghana-yellow transition">Home</a></li>
+                    <li><a href="past-questions.html" class="text-ghana-yellow font-medium">Past Questions</a></li>
+                    <li><a href="gpa-calculator.html" class="hover:text-ghana-yellow transition">GPA Calculator</a></li>
+                    <li><a href="services.html" class="hover:text-ghana-yellow transition">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-ghana-green mb-4 border-b pb-2">Past Questions</h2>
+            <div id="pq-container" class="mt-6">
+                <!-- Will be populated by JavaScript -->
+                <p class="text-center text-gray-500">Loading past questions...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="ghana-green text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 UENR Agribusiness Department. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/past-questions.js"></script>
+</body>
+</html>
