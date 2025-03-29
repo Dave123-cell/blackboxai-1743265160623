@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UENR Agribusiness Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .ghana-green {
+            background-color: #006b3f;
+        }
+        .ghana-yellow {
+            background-color: #5ffc16;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="ghana-green text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="assets/logo.jpg" alt="ABSAG UENR Logo" class="h-12 w-12 rounded-full object-cover border-2 border-white">
+                <div>
+                    <h1 class="text-xl font-bold">UENR Agribusiness Portal</h1>
+                    <p class="text-xs text-white opacity-80">Department of Agribusiness Management & Consumer Studies</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#past-questions" class="hover:text-ghana-yellow transition">Past Questions</a></li>
+                    <li><a href="#gpa-calculator" class="hover:text-ghana-yellow transition">GPA Calculator</a></li>
+                    <li><a href="#services" class="hover:text-ghana-yellow transition">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-12 text-center">
+            <h2 class="text-3xl font-bold text-ghana-green mb-4">Department of Agribusiness Management and Consumer Studies</h2>
+            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Welcome to the official portal for students of Agribusiness Management at the University of Energy and Natural Resources, Ghana</p>
+            <div class="bg-ghana-green bg-opacity-10 p-6 rounded-lg max-w-4xl mx-auto">
+                <h3 class="font-semibold text-ghana-green mb-3">About Our Program</h3>
+                <p class="text-gray-700">Our program equips students with skills in agricultural business management, value chain analysis, and consumer behavior. Graduates become leaders in Ghana's agribusiness sector.</p>
+            </div>
+        </section>
+
+        <!-- Features Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <a href="past-questions.html" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                <div class="text-ghana-green text-4xl mb-4">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Past Questions</h3>
+                <p class="text-gray-600">Access past examination questions for all courses</p>
+            </a>
+
+            <a href="gpa-calculator.html" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                <div class="text-ghana-green text-4xl mb-4">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">GPA Calculator</h3>
+                <p class="text-gray-600">Calculate your current and projected GPA</p>
+            </a>
+
+            <a href="services.html" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                <div class="text-ghana-green text-4xl mb-4">
+                    <i class="fas fa-concierge-bell"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Academic Services</h3>
+                <p class="text-gray-600">Request transcripts, advising, and other services</p>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ghana-green text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 UENR Agribusiness Department. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-ghana-yellow"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-ghana-yellow"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-ghana-yellow"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/gpa-calculator.js"></script>
+    <script src="scripts/services.js"></script>
+</body>
+</html>
